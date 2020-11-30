@@ -92,7 +92,7 @@ render(){
 console.log('App render started');
   return (
     <div >
-      <Header currentUser={this.state.currentUser}></Header>
+      <Header ></Header> {/*currentUser={this.state.currentUser} was removed from header after adding redux*/}
      {/* <Homepage></Homepage> */}
      {/* <Switch>
      <Route  path='/' component ={Homepage}></Route>
