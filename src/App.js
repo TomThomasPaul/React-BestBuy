@@ -6,7 +6,7 @@ import {Route, Switch,Link} from 'react-router-dom';
 import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from '../src/components/header/header.component';
-import {auth} from './firebase/firebase.utils';
+import {auth, createUserProfileDocument} from './firebase/firebase.utils';
 
 
 // const HatsPage =(props)=>{
@@ -41,9 +41,41 @@ unsubscribeFromAuth = null;
 
   componentDidMount(){
     console.log("AppJs Mounted")
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(user=>{//this.unsubscribeFromAuth will be assigned a function that when called will close the subscription
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth=>{//this.unsubscribeFromAuth will be assigned a function that when called will close the subscription
 
-     this.setState({currentUser : user},()=>{ console.log(this.state)});
+     //this.setState({currentUser : user},()=>{ console.log(this.state)});
+
+     if(userAuth){
+      const userRef = await createUserProfileDocument(userAuth);
+
+      userRef.onSnapshot(snapshot=>{
+         
+        
+        this.setState({
+         currentUser :{
+           id : snapshot.id,
+           ...snapshot.data()
+
+
+         }
+
+
+        },()=>{
+
+          console.log(this.state);
+        });  
+      });
+
+
+
+     }else{
+
+      this.setState({currentUser : userAuth});
+
+
+     }
+
+     
      
 
     });
