@@ -4,13 +4,16 @@ import {ReactComponent as Logo} from '../../assets/crown.svg';
 import { auth } from '../../firebase/firebase.utils';
 import './header.styles.scss';
 import {connect} from 'react-redux';
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
 
-const Header=({currentUser})=>{
+const Header=({currentUser,hidden})=>{
 
 return <div className ='header'>
 
-
+{console.log("currentUser IN HEADER COMPONENT")}
+{console.log(currentUser)}
 <Link className='logo-container' to='/'>
   <Logo className='logo'></Logo>
 </Link>
@@ -26,7 +29,10 @@ currentUser?
 (<Link className='option' to='/signIn'>SIGN IN</Link>)
 
 }
+<CartIcon ></CartIcon>
 </div>
+
+{hidden?null : <CartDropdown></CartDropdown> }
 
 
 </div>
@@ -35,10 +41,16 @@ currentUser?
 
 }
 
-const mapToStateProps = (state)=>{ //state is root reducer or combinedReducers in this case
+
+
+const mapStateToProps = ({user : {currentUser}, cart : {hidden}})=>{ //state is root reducer or combinedReducers in this case
+  
   return {
-    currentUser : state.user.currentUser 
+    currentUser ,
+    hidden       
+    
+    
   }
 }
 
-export default connect(mapToStateProps)(Header); //
+export default connect(mapStateToProps)(Header); 
