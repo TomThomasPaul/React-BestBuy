@@ -9,3 +9,16 @@ export const ToggleCart = ()=>{
 
 
 }
+
+export const AddItem = (item)=>{
+
+return {
+
+type : CartTypes.ADD_ITEM,
+payload : item
+
+
+}
+
+
+}
