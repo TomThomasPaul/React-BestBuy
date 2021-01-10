@@ -9,6 +9,8 @@ import Header from '../src/components/header/header.component';
 import {auth, createUserProfileDocument} from './firebase/firebase.utils';
 import {connect} from 'react-redux';
 import {setCurrentUser} from './redux/user/user.actions';
+import {createStructuredSelector} from 'reselect';
+import {selectCurrentUser} from './redux/user/users.selectors';
 
 
 // const HatsPage =(props)=>{
@@ -119,9 +121,9 @@ console.log('App render started');
 }
   }
 
- const mapStateToProps=({user})=>( { //destructure user from root reducer and return currentUser which is used as props in app component
+ const mapStateToProps=createStructuredSelector( { //destructure user from root reducer and return currentUser which is used as props in app component
 
-   currentUser : user.currentUser
+   currentUser : selectCurrentUser
 
  } )
 
