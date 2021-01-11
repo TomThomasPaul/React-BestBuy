@@ -32,3 +32,13 @@ export const RemoveCartItem =(item)=>{
 
     }
 }
+
+export const RemoveItem = (item)=>{
+
+
+    return{
+
+        type : CartTypes.REMOVE_ITEM,
+        payload : item
+    }
+}

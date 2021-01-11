@@ -37,3 +37,30 @@ return [...cartItems]
 
 // }
 
+export const removeItemFromCheckout =(cartItems,itemToBeRemoved)=>{
+let removeCartItem=false;
+//update quantity of the respective items
+cartItems.forEach((item)=>{
+
+if(item.id===itemToBeRemoved.id ){
+console.log("inside remove function");
+  if(item.quantity>1 ){
+  item.quantity-=1;
+  console.log("inside remove function if statement");
+  } else if(item.quantity===1){
+
+    //remove item from cart
+    removeCartItem=true;
+  }
+  return;
+}
+
+
+});
+if(removeCartItem){
+return cartItems.filter((item)=>item.id!==itemToBeRemoved.id);
+
+}else { return [...cartItems];  }
+
+
+};

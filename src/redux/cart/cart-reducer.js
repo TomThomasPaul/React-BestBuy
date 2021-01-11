@@ -1,5 +1,6 @@
 import {CartTypes} from './cart-types.js';
 import {addItemToCart} from './cart.utils.js'
+import {removeItemFromCheckout} from './cart.utils.js';
 
 const INITIAL_STATE={
 
@@ -34,11 +35,22 @@ cartItems
 
 };
 
-case CartTypes.REMOVE_CART_ITEM :return {
+case CartTypes.REMOVE_CART_ITEM : return {
 
 ...state,
 cartItems : state.cartItems.filter((item)=>item.id!==action.payload.id)
 
+};
+
+case CartTypes.REMOVE_ITEM :{
+    const cartItems = removeItemFromCheckout(state.cartItems,action.payload);
+    
+    return {
+
+
+    ...state,
+    cartItems
+}
 };
 
 default : return state ;
