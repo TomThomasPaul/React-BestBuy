@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import Homepage from './pages/homepage/homepage.component';
+import CheckoutPage from './pages/checkout/checkout.component';
 import {Route, Switch,Link,Redirect} from 'react-router-dom';
 import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
@@ -107,6 +108,7 @@ console.log('App render started');
      <Switch>
      <Route exact path='/' component ={Homepage}></Route>
      <Route  path='/shop' component ={ShopPage}></Route>
+     <Route exact path='/checkout' component ={CheckoutPage}></Route>
      {/*<Route  path='/signIn' component ={SignInAndSignUpPage}></Route>*/}
      <Route exact path='/signIn' render ={()=>this.props.currentUser? ( <Redirect to='/' />) : (<SignInAndSignUpPage/>)} ></Route>
      </Switch>
