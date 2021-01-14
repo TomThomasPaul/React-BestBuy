@@ -36,7 +36,7 @@ const CheckoutPage = ({cartItems,total})=>{
                   { 
                   cartItems.map((cartItem)=> {
                     console.log(cartItems);
-                     return <CheckoutItem key={cartItem.id}  quant={cartItem.quantity} cartItem={cartItem}/>;
+                     return <CheckoutItem key={cartItem.id} quant={cartItem.quantity}  cartItem={cartItem}/>;  //
                     }
                       
                       )

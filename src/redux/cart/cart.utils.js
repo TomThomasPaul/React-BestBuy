@@ -39,6 +39,7 @@ return [...cartItems]
 
 export const removeItemFromCheckout =(cartItems,itemToBeRemoved)=>{
 let removeCartItem=false;
+
 //update quantity of the respective items
 cartItems.forEach((item)=>{
 
@@ -58,9 +59,12 @@ console.log("inside remove function");
 
 });
 if(removeCartItem){
-return cartItems.filter((item)=>item.id!==itemToBeRemoved.id);
+  return cartItems.filter((item)=>item.id!==itemToBeRemoved.id);
 
-}else { return [...cartItems];  }
+
+}else {
+  
+  return [...cartItems];  }
 
 
 };
