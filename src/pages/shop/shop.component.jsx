@@ -1,10 +1,13 @@
 import React from 'react';
+import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
+import {Route} from "react-router-dom";
+import CollectionPage from '../../pages/collection/collection.component';
 //import SHOP_DATA from './shop.data';
-import {connect} from 'react-redux';
-import {createStructuredSelector} from 'reselect';
-import {selectShopCollections} from '../../redux/shop/shop-selectors';
+//import {connect} from 'react-redux';
+//import {createStructuredSelector} from 'reselect';
+//import {selectShopCollections} from '../../redux/shop/shop-selectors';
 
-import CollectionPreview from '../../components/collections-preview/collections-preview.component';
+//import CollectionPreview from '../../components/collections-preview/collections-preview.component';
 
 // class ShopPage extends React.Component{ //changing to functional component coz of transferring collections to redux.  same with directory
 
@@ -16,17 +19,19 @@ import CollectionPreview from '../../components/collections-preview/collections-
 // }
 // }
 
-const ShopPage = ({collections})=>{
+const ShopPage = ({match})=>{
 
 
 //const {collections} = this.state;
 return <div className='shop-page'>
 
-{collections.map(({id,...otherCollectionProps})=>{
+{/* {collections.map(({id,...otherCollectionProps})=>{
 
   return <CollectionPreview key ={id} {...otherCollectionProps}></CollectionPreview>
 
-})}
+})} */}
+< Route exact path={`${match.path}`} component={CollectionsOverview}></ Route>
+<Route path ={`${match.path}/:collectionId`} component={CollectionPage}></Route>
 
 
 
@@ -37,10 +42,6 @@ return <div className='shop-page'>
 }
 
 
-const mapStateToProps=createStructuredSelector({
 
-collections : selectShopCollections
 
-});
-
-export default connect(mapStateToProps)(ShopPage);
+export default ShopPage;
