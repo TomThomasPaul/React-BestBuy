@@ -19,8 +19,13 @@ export const selectShopCollections =createSelector(
     (shop)=>shop.collections
 );
 
+export const selectCollectionsForPreview =createSelector(
+    [selectShopCollections],
+    collections=>Object.keys(collections).map(key=>collections[key])
+);
 
 export const selectCollection = memoize(collectionId=> createSelector( //memoize is used in this selector because this one has an input  'collection id' ..so the next time the same input is received the func is not called and the results are obtained from the cache
     [selectShopCollections],
-    collections=>collections.find(collection=>collection.id===COLLECTION_ID_MAP[collectionId])
+    //collections=>collections.find(collection=>collection.id===COLLECTION_ID_MAP[collectionId])
+    collections=>collections[collectionId]
 ));

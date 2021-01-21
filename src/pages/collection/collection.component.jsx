@@ -9,9 +9,17 @@ import CollectionItem from "../../components/collection-item/collection-item.com
 
 const CollectionPage =({collection})=>{
 console.log(collection);// MATCH IS PASSED BY THE ROUTE IN SHOP COMPONENT
+const {title,items} = collection;
 return <div className="collection-page">
 
-<h1>COLLECTION PAGE</h1>
+<h1 className="title">{title}</h1>
+<div className="items">
+
+    {items.map(item=><CollectionItem key={item.id} item={item}></CollectionItem>)
+
+
+    }
+</div>
 
 </div>
 
