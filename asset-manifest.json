@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/React-Bestbuy/static/css/main.1bf08f0c.chunk.css",
-    "main.js": "/React-Bestbuy/static/js/main.50207e8f.chunk.js",
-    "main.js.map": "/React-Bestbuy/static/js/main.50207e8f.chunk.js.map",
-    "runtime-main.js": "/React-Bestbuy/static/js/runtime-main.05087e1e.js",
-    "runtime-main.js.map": "/React-Bestbuy/static/js/runtime-main.05087e1e.js.map",
-    "static/js/2.e719b8aa.chunk.js": "/React-Bestbuy/static/js/2.e719b8aa.chunk.js",
-    "static/js/2.e719b8aa.chunk.js.map": "/React-Bestbuy/static/js/2.e719b8aa.chunk.js.map",
-    "static/js/3.13966ace.chunk.js": "/React-Bestbuy/static/js/3.13966ace.chunk.js",
-    "static/js/3.13966ace.chunk.js.map": "/React-Bestbuy/static/js/3.13966ace.chunk.js.map",
-    "index.html": "/React-Bestbuy/index.html",
-    "static/css/main.1bf08f0c.chunk.css.map": "/React-Bestbuy/static/css/main.1bf08f0c.chunk.css.map",
-    "static/js/2.e719b8aa.chunk.js.LICENSE.txt": "/React-Bestbuy/static/js/2.e719b8aa.chunk.js.LICENSE.txt",
-    "static/media/crown.207ae289.svg": "/React-Bestbuy/static/media/crown.207ae289.svg",
-    "static/media/shopping-bag.a688874f.svg": "/React-Bestbuy/static/media/shopping-bag.a688874f.svg"
+    "main.css": "/React-BestBuy/static/css/main.1bf08f0c.chunk.css",
+    "main.js": "/React-BestBuy/static/js/main.2b2c1900.chunk.js",
+    "main.js.map": "/React-BestBuy/static/js/main.2b2c1900.chunk.js.map",
+    "runtime-main.js": "/React-BestBuy/static/js/runtime-main.c543ee25.js",
+    "runtime-main.js.map": "/React-BestBuy/static/js/runtime-main.c543ee25.js.map",
+    "static/js/2.100eaa68.chunk.js": "/React-BestBuy/static/js/2.100eaa68.chunk.js",
+    "static/js/2.100eaa68.chunk.js.map": "/React-BestBuy/static/js/2.100eaa68.chunk.js.map",
+    "static/js/3.13966ace.chunk.js": "/React-BestBuy/static/js/3.13966ace.chunk.js",
+    "static/js/3.13966ace.chunk.js.map": "/React-BestBuy/static/js/3.13966ace.chunk.js.map",
+    "index.html": "/React-BestBuy/index.html",
+    "static/css/main.1bf08f0c.chunk.css.map": "/React-BestBuy/static/css/main.1bf08f0c.chunk.css.map",
+    "static/js/2.100eaa68.chunk.js.LICENSE.txt": "/React-BestBuy/static/js/2.100eaa68.chunk.js.LICENSE.txt",
+    "static/media/crown.207ae289.svg": "/React-BestBuy/static/media/crown.207ae289.svg",
+    "static/media/shopping-bag.a688874f.svg": "/React-BestBuy/static/media/shopping-bag.a688874f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.05087e1e.js",
-    "static/js/2.e719b8aa.chunk.js",
+    "static/js/runtime-main.c543ee25.js",
+    "static/js/2.100eaa68.chunk.js",
     "static/css/main.1bf08f0c.chunk.css",
-    "static/js/main.50207e8f.chunk.js"
+    "static/js/main.2b2c1900.chunk.js"
   ]
 }
