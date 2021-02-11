@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-BestBuy/static/css/main.1bf08f0c.chunk.css",
+    "main.js": "/React-BestBuy/static/js/main.50207e8f.chunk.js",
+    "main.js.map": "/React-BestBuy/static/js/main.50207e8f.chunk.js.map",
+    "runtime-main.js": "/React-BestBuy/static/js/runtime-main.c543ee25.js",
+    "runtime-main.js.map": "/React-BestBuy/static/js/runtime-main.c543ee25.js.map",
+    "static/js/2.100eaa68.chunk.js": "/React-BestBuy/static/js/2.100eaa68.chunk.js",
+    "static/js/2.100eaa68.chunk.js.map": "/React-BestBuy/static/js/2.100eaa68.chunk.js.map",
+    "static/js/3.13966ace.chunk.js": "/React-BestBuy/static/js/3.13966ace.chunk.js",
+    "static/js/3.13966ace.chunk.js.map": "/React-BestBuy/static/js/3.13966ace.chunk.js.map",
+    "index.html": "/React-BestBuy/index.html",
+    "static/css/main.1bf08f0c.chunk.css.map": "/React-BestBuy/static/css/main.1bf08f0c.chunk.css.map",
+    "static/js/2.100eaa68.chunk.js.LICENSE.txt": "/React-BestBuy/static/js/2.100eaa68.chunk.js.LICENSE.txt",
+    "static/media/crown.207ae289.svg": "/React-BestBuy/static/media/crown.207ae289.svg",
+    "static/media/shopping-bag.a688874f.svg": "/React-BestBuy/static/media/shopping-bag.a688874f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c543ee25.js",
+    "static/js/2.100eaa68.chunk.js",
+    "static/css/main.1bf08f0c.chunk.css",
+    "static/js/main.50207e8f.chunk.js"
+  ]
+}
