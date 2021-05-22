@@ -20,7 +20,7 @@ const StripeCheckoutButton = ({price})=>{
           billingAddress
           amount={priceForStripe}
           description={`Your total is $${price}`}
-          image="https://sendeyo.com/up/d/f3eb2117da"
+          image="https://i.etsystatic.com/24957288/r/il/d8b89d/3085970309/il_794xN.3085970309_skur.jpg"
           panelLabel="Pay Now"
           token={onToken}
           stripeKey={publishableKey}
