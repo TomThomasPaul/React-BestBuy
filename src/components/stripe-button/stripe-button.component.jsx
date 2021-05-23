@@ -1,6 +1,8 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 
+import {ReactComponent as Logo} from "../../assets/crown.svg";
+
 const StripeCheckoutButton = ({price})=>{
 
     const priceForStripe = price * 100 ;
@@ -20,7 +22,9 @@ const StripeCheckoutButton = ({price})=>{
           billingAddress
           amount={priceForStripe}
           description={`Your total is $${price}`}
-          image="https://i.etsystatic.com/24957288/r/il/d8b89d/3085970309/il_794xN.3085970309_skur.jpg"
+         // image="https://i.etsystatic.com/24957288/r/il/d8b89d/3085970309/il_794xN.3085970309_skur.jpg"
+         image="favicon.ico"
+           
           panelLabel="Pay Now"
           token={onToken}
           stripeKey={publishableKey}
