@@ -1,6 +1,5 @@
 {
-  "homepage": "https://tomthomaspaul.github.io/React-BestBuy",
-  "name": "bestbuy",
+   "name": "bestbuy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
