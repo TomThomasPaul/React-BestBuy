@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-BestBuy/static/css/main.1bf08f0c.chunk.css",
-    "main.js": "/React-BestBuy/static/js/main.2b2c1900.chunk.js",
-    "main.js.map": "/React-BestBuy/static/js/main.2b2c1900.chunk.js.map",
+    "main.js": "/React-BestBuy/static/js/main.539be1b4.chunk.js",
+    "main.js.map": "/React-BestBuy/static/js/main.539be1b4.chunk.js.map",
     "runtime-main.js": "/React-BestBuy/static/js/runtime-main.c543ee25.js",
     "runtime-main.js.map": "/React-BestBuy/static/js/runtime-main.c543ee25.js.map",
     "static/js/2.100eaa68.chunk.js": "/React-BestBuy/static/js/2.100eaa68.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.c543ee25.js",
     "static/js/2.100eaa68.chunk.js",
     "static/css/main.1bf08f0c.chunk.css",
-    "static/js/main.2b2c1900.chunk.js"
+    "static/js/main.539be1b4.chunk.js"
   ]
 }
