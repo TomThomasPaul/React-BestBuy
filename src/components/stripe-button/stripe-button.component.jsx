@@ -12,7 +12,7 @@ const StripeCheckoutButton = ({price})=>{
     }
     return (
 
-
+        //stripe checkout
         <StripeCheckout 
           label="Pay Now"
           name="BestBuy" 
